@@ -16,7 +16,6 @@ const getCharacters = async () => {
     let currentLinks = firstPage.links
     while (true) {
         const nextPage = currentLinks.next
-        console.log(nextPage)
         if (nextPage) {
             const currentPage = await getPage(nextPage)
             resultArr.push(...currentPage.data)
