@@ -1,4 +1,4 @@
-export const potterDBData =[{
+export const data =[{
     "id": "5bf2d893-3db8-4bff-bfab-dbc907fc2696",
     "type": "character",
     "attributes": {
@@ -6758,4 +6758,4 @@ export const potterDBData =[{
 }]
 
 
-export default potterDBData
+export default data

@@ -42,7 +42,7 @@ export async function getCharactersWithPhotos() {
 // let res = await getCharactersWithPhotos()
 
 // (B) WRITE TO FILE
-// fs.writeFile("potterdbdata.js", JSON.stringify(filterCharactersWithWands(res)), "utf8", (error, data) => {
+// fs.writeFile("data.js", JSON.stringify(filterCharactersWithWands(res)), "utf8", (error, data) => {
 //     console.log("Write complete");
 //     console.log(error);
 //     console.log(data);

@@ -148,14 +148,14 @@ header {
     }
 
     .header__title {
-      font-size: 52px;
-      letter-spacing: unset;
-      margin-bottom: 14px;
+        font-size: 52px;
+        letter-spacing: unset;
+        margin-bottom: 14px;
     }
 
     .header__subtitle {
-      font-size: 16px;
-      margin-bottom: 24px;
+        font-size: 16px;
+        margin-bottom: 24px;
     }
 
     .search-wrapper {
@@ -166,6 +166,12 @@ header {
     }
 
     .search__house-selector {
+        width: 100%;
+    }
+}
+
+@media (max-width: 414px) {
+    .character-wrapper {
         width: 100%;
     }
 }

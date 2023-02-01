@@ -1,9 +1,4 @@
 // get data from api
-// const getData = async () => {
-//   const response = await fetch('https://hp-api.onrender.com/api/characters');
-//   return await response.json()
-//
-// }
 
 // {
 //   id: '9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8',
@@ -26,4 +21,10 @@
 //   alternate_actors: [],
 //   alive: true,
 //   image: 'https://ik.imagekit.io/hpapi/harry.jpg'
+// }
+
+// const getData = async () => {
+//   const response = await fetch('https://hp-api.onrender.com/api/characters');
+//   return await response.json()
+//
 // }

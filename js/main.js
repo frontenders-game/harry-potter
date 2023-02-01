@@ -1,9 +1,9 @@
-import potterDBData from "./potterdb/potterdbdata.js";
+import data from "./potterdb/data.js";
 
 
 const main = () => {
     // load json with character cards
-    const charactersData = JSON.parse(JSON.stringify(potterDBData))
+    const charactersData = JSON.parse(JSON.stringify(data))
 
     // select container for character cards
     const cardContainer = document.querySelector('div.main-wrapper')
@@ -21,7 +21,7 @@ const main = () => {
     const houseSelector = document.querySelector('.search__house-selector')
 
     const houseList = () => {
-        const houses = potterDBData.reduce((acc, current) => acc.add(current.attributes.house), new Set())
+        const houses = data.reduce((acc, current) => acc.add(current.attributes.house), new Set())
         return [...houses].filter(house => !!house).sort()
     }
 
