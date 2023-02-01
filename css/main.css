@@ -1,142 +1,171 @@
 /* Reset browser style */
 *, *:before, *:after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
 body {
-  min-height: 100vh;
-  background-color:  #F5F5F5;
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: #152536;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #152536;
 }
 
 
 .container {
-  max-width: 768px;
-  padding: 40px;
-  margin: 0 auto;
+    max-width: 768px;
+    padding: 40px;
+    margin: 0 auto;
 }
 
 
 /* Header and search */
 header {
-  padding-top: 24px;
-  border-bottom: 1px solid #DEE2E6;
+    padding-top: 24px;
+    border-bottom: 1px solid #dee2e6;
 }
 
 .header__title {
-  font-weight: 700;
-  font-size: 64px;
-  letter-spacing: -0.02em;
-  color: #000000;
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing: -0.02em;
+    color: #000000;
 }
 
 .header__subtitle {
-  font-size: 21px;
-  color: #000000;
-  margin-bottom: 48px;
+    font-size: 21px;
+    color: #000000;
+    margin-bottom: 48px;
 }
 
 .search-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .search__name,
 .search__house {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3px;
 }
-.search__name{
-  flex-grow: 1;
+
+.search__name {
+    flex-grow: 1;
 }
-.search__label{
-  font-size: 16px;
-  color: #818182;
+
+.search__label {
+    font-size: 16px;
+    color: #818182;
 }
 
 .search__name-input,
 .search__house-selector {
-  width: 100%;
-  background: #ffffff;
-  color: #ABB5BE;
-  font-size: 16px;
-  border: 1px solid #CED4DA;
-  border-radius: 4px;
-  padding: 9px 0 9px 17px;
-  cursor: url("../images/wand.png"), pointer;
+    width: 100%;
+    background: #ffffff;
+    color: #abb5be;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 9px 0 9px 17px;
+    cursor: url("../images/wand.png"), pointer;
 }
 
 
-.search__name-input{
-  padding-right: 15px;
+.search__name-input {
+    padding-right: 15px;
 }
 
-.search__house-selector{
-  width: 218px;
-  outline: none;
+.search__house-selector {
+    width: 218px;
 }
 
 
-.search__name-input::placeholder
-{
-  color: #ABB5BE;
+.search__name-input::placeholder {
+    color: #abb5be;
 }
 
 .search__name-input:focus,
 .search__house-selector:focus {
-  outline: none;
+    outline: none;
 }
 
-/* Main emoji block */
 .main-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
 }
 
 .character-wrapper {
-  background-color: #ffffff;
-  border: 1px solid #DEE2E6;
-  border-radius: 4px;
-  width: 334px;
-  height: 100%;
-  padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    width: 334px;
+    height: 100%;
+    padding: 24px;
 
 }
 
 .character-image-wrapper {
-  display: flex;
-  justify-content: space-around;
-  height: 192px;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 192px;
+    margin-bottom: 20px;
 }
 
 .character__image {
-  max-width: 100%;
-  border-radius: 4px;
+    max-width: 100%;
+    border-radius: 4px;
 
 }
 
 
-.character-text-wrapper{
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-  gap: 9px;
+.character-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 9px;
 }
 
 .character__title {
-  color: #152536;
-  font-size: 20px;
-  font-weight: 800;
+    color: #152536;
+    font-size: 20px;
+    font-weight: 800;
 }
 
+
+@media (max-width: 767px) {
+    .main-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__title {
+      font-size: 52px;
+      letter-spacing: unset;
+      margin-bottom: 14px;
+    }
+
+    .header__subtitle {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+
+    .search-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 19px;
+    }
+
+    .search__house-selector {
+        width: 100%;
+    }
+}
