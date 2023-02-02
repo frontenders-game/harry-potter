@@ -1,3 +1,5 @@
+@import "modal.css";
+
 /* Reset browser style */
 *, *:before, *:after {
     padding: 0;
@@ -20,6 +22,14 @@ body {
     max-width: 768px;
     padding: 40px;
     margin: 0 auto;
+}
+
+.visible {
+    display: block;
+}
+
+.wand-cursor {
+    cursor: url("../images/wand.png"), pointer;
 }
 
 
@@ -74,7 +84,6 @@ header {
     border: 1px solid #ced4da;
     border-radius: 4px;
     padding: 9px 0 9px 17px;
-    cursor: url("../images/wand.png"), pointer;
 }
 
 
@@ -125,7 +134,6 @@ header {
 
 }
 
-
 .character-text-wrapper {
     display: flex;
     flex-direction: column;
@@ -138,6 +146,12 @@ header {
     font-size: 20px;
     font-weight: 800;
 }
+
+.character__url {
+    color: black;
+    text-decoration: none;
+}
+
 
 
 @media (max-width: 767px) {
