@@ -89,17 +89,13 @@ export const siteCardHTML = characterObj => {
 export const modalCardHTML = characterObj => {
     const attrs = characterObj.attributes
     const attributes = generateCardAttributes(characterObj, KEYS)
-
-    return `<div class="modal__content-no-scroll">
-                    <div class="modal__image-wrapper">
-                        <img class="character__image" src="${attrs.image}" alt="image of ${attrs.name}">
-                    </div>  
-                    <h3 class='modal-character__title'>${attrs.name}</h3>
-                </div>
-                <div class="modal__-text-wrapper">
-                    ${attributes}
-                </div>  
-                <button class="modal__close-btn wand-cursor">[ X ]</button>
-            </div>`
+    // todo: no scroll on image+title, scroll on attributes
+    return `<div class="modal__image-wrapper">
+                <img class="character__image" src="${attrs.image}" alt="image of ${attrs.name}">
+            </div>  
+            <h3 class='modal-character__title'>${attrs.name}</h3>
+            <div class="modal__text-wrapper">
+                ${attributes}
+            </div>  
+            <button class="modal__close-btn wand-cursor"></button>`
 }
-
